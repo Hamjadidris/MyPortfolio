@@ -175,7 +175,7 @@ footer{
     height: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 300px) {
     .int{
         flex-direction: column-reverse;
     }
