@@ -179,7 +179,9 @@ footer{
     main{
         margin-left: 20px;
         margin-right: 0;
+        font-size: larger;
     }
+    
     .int{
         flex-direction: column-reverse;
     }
