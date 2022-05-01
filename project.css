@@ -179,8 +179,10 @@ footer{
     main{
         margin-left: 20px;
         margin-right: 0;
-        font-size: 4em;
+        
     }
+    body{
+        font-size:2em;
     
     .int{
         flex-direction: column-reverse;
