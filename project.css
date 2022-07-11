@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    background-color: gainsboro;
+    font-family: 'Montserrat';
+}
+
+.nav{
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+}
+.list{
+    display: inline-block;
+    
+}
+.nav p{
+    border: 2px solid black;
+}
+.nav a{
+    display: inline-block;
+    margin-left: 5px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family: montserrat;
+    border-right:2px solid black ;
+}
+.nav a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    transition-property: all;
+}
+.nav :last-child{
+    border-right:0 ;
+}
+.section1{
+    margin-top: 100px;
+    text-align: center;
+    
+}
+.section1 .intro{
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+}
+.section1 img{
+    border-radius: 50%;
+}
+.int{
+    display: flex;
+    flex-direction: row;
+}
+.int h1{
+    font-size: 50px;
+}
+
+.intro a{
+    display: inline-block;
+    margin-top: 15px;
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(196, 196, 196);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(102, 102, 102) ;
+    padding: 9px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+.intro a:hover{
+    background-color: rgb(13, 58, 50);
+    color: wheat;
+
+}
+.section2{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    text-align: center;
+    
+    
+    
+}
+.section2 div{
+    text-align: left;
+    
+}
+.section2 img{
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.keyskills p{
+    margin-bottom: 0;
+
+}   
+.codingskills{
+    flex-grow: 0.3;
+
+}
+.codingskills p{
+    margin-bottom: 0;
+}
+.percentagecont{
+    display: inline-block;
+    height: 8px;
+    width: 90%;
+    background-color: gray;
+    border-radius:25px ;
+    padding: 2px;
+    
+
+}
+.percentage{
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+
+
+}
+
+.section3{
+    height: 150px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(13,13,13,1) 0%, rgba(41,37,37,1) 35%, rgba(249,249,249,1) 100%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+.section3 .vid{
+    width: 30%;
+    height: 80%;
+    align-content: center;
+    background-color: black;
+    text-align: center;
+    border: 2px solid gainsboro;
+    border-radius: 25px;
+    animation-name:slide ;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+
+    
+}
+.vid h2{
+    background-color: black;
+    color:gainsboro;
+    border-radius: 25px;
+    padding-top: 8%;
+    
+}
+footer{
+    margin-top: 50px;
+    text-align: end;
+    position: relative;
+    bottom: 0;
+}
+.google{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 60px;
+
+}
+.google img{
+    width: 100px;
+    height: auto;
+    border-radius: 25px;
+    
+}
+.google a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: bold;
+    color: black;
+    height: 100%;
+}
+
+
+
+@keyframes slide{
+    from{transform: translateX(-105vw);}
+    to{transform: translateX(105vw);}
+}
+
+@media (max-width:600px) {
+    *{
+        font-family: 'Inter';
+    }
+    body{
+        width: 100vw;
+    }
+    .nav a{
+        font-size: unset;
+    }
+    .nav img{
+        height:8vh;
+    }
+ 
+    .int{
+        flex-direction: column-reverse;
+        margin-bottom: 3vh;
+    }
+    .section1{
+        text-align: left;
+        font-size: 1.5rem;
+        padding-left: 2vh;
+    }
+    .section1 img{
+        width: 60%;
+        margin-bottom: 3vh;
+    }
+    .int h1{
+        font-size: 2.5rem;
+        margin-bottom: 2.5vh;
+        
+    }
+
+    .in .intro{
+        width: 100%;
+    }
+    .intro a{
+        font-size: 1.5rem;
+        
+    }    
+    .section2{
+        flex-direction: column;
+    }
+    .section2 img{
+        width: 10%;
+        height: auto;
+        margin-bottom: 3vh;
+    }
+    .keyskills{
+        font-size: 1.5rem;
+        padding-left: 2.5vh;
+    }
+    .keyskills h2{
+        margin-bottom: 30px;
+        font-size: 3rem;
+        padding-left: 1.5vh;
+    }
+    .section2 .codingskills{
+        width: 90vw;
+        font-size: 1.5rem;
+        margin-left: 5vw;
+
+    }
+    .section2 .codingskills h2{
+        margin-bottom: 30px;
+        font-size: 3rem;
+        padding-left: 1.5vh;
+    }
+    .codingskills .percentagecont{
+        height: 1.5vh;
+        margin: 1vh 0;
+    
+    }
+    .section3{
+        height: 25vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow:hidden;
+        
+    }
+    .section3 .vid h2{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .section3 .vid{
+        width: 60vw;
+        flex-basis: 60vw;
+        height: 50%;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2vw;
+        margin: 0 5vw;
+    }
+    .google{
+        padding-left: 5vw;
+    }
+    .google img{
+        height: 50%;
+        width: 20%;
+        border-radius: 15px;
+    }
+    .google a{
+        font-size: 1.5rem;
+    }  
+    .s3 h1{
+        font-size: 2rem;
+
+    }  
+    .percentagecont{
+        height: 3vh;
+        padding: 6px;
+        width: 85%;
+    
+    }
+    .per{
+        display: flex;
+        align-items: center;
+    
+    }
+    .per span{
+        font-size: 100%;
+        margin-left: 1vh;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+
+}
+     
+
