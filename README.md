@@ -6,4 +6,4 @@ This portfolio page is but just a static portfolio project I took on after just 
 
 
 
-Main portfolio page still in the works!👨🏾‍🍳
+Main portfolio site still in the works!👨🏾‍🍳
